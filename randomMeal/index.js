@@ -69,8 +69,8 @@ const fetchMeal = () => {
         return apiResponse.json();
       }
     })
-    .then((res) => {
-      createMeal(res.meals[0]);
+    .then((data) => {
+      createMeal(data.meals[0]);
     })
     .catch((err) => console.error(err));
 };
